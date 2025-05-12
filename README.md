@@ -29,6 +29,20 @@ Este projeto web foi desenvolvido por **Ingrid Xisto** com o objetivo de consumi
 
 ---
 
+## 📁 Estrutura do Projeto
+
+```plaintext
+📁 Web-Site-com-Integracao-da-API-de-Os-Simpsons
+├── 📁 css/
+│   └── style.css
+├── 📁 js/
+│   └── script.js
+├── 📁 image/
+│   └── logo.webp
+├── index.html
+└── README.md
+```
+
 ## 🚀 Como Executar o Projeto
 
 1. Clone o repositório:
