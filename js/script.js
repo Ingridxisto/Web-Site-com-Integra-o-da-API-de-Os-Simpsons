@@ -3,7 +3,7 @@
 * Data: 12/05/2025
 * Autor: Ingrid Xisto Santos
 * Versão: 1.0
-* Github: 
+* Github: https://github.com/Ingridxisto/Web-Site-com-Integra-o-da-API-de-Os-Simpsons
 ************************************/
 
 
