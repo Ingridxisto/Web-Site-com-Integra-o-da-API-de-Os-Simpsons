@@ -1,0 +1,291 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+h2 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin-left: 20px;
+  font-size: 40px;
+  color: #1c1c1c;
+  text-shadow: 2px  2px 0 #f4e757;
+}
+
+/* MENU */
+header.menu {
+  background-color: #fbd737;
+  padding: 50px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+header.menu nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.logo{
+  position: absolute;
+  left: 20px;
+}
+
+.logo img {
+  width: 250px;
+  height: auto;
+  margin-right: auto;
+  align-self: flex-start;
+}
+
+/* TÍTULO */
+.titulo-menu {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.titulo-menu h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 70px;
+  margin: 10px 0;
+  color: #000;
+  text-shadow: 2px  2px 0 #fff;
+}
+
+/* LINKS DE NAVEGAÇÃO */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+nav ul li {
+  margin-top: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  border: 15px solid transparent;
+  border-radius: 10px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+nav ul li a:hover {
+  color: #848807;
+  background-color: #fffacd; 
+}
+
+/* SEÇÃO SOBRE */
+#sobre {
+  width: auto;
+  height: 700px;
+  background-image: url(../image/sobre-image.webp);
+  background-attachment: scroll;
+  background-position: center top;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+#sobre .conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 50px;
+}
+
+#sobre .conteudo h2{
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 40px;
+  color: #1c1c1c;
+  text-shadow: 2px  2px 0 #f4e757;
+  margin: 0 0 20px 0;
+  padding-right: 450px;
+}
+
+#sobre .conteudo p {
+  max-width: 550px;
+  font-family: verdana;  
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: #151414;
+  text-align: left;
+  line-height: 2.5;
+}
+
+#personagens input[type="text"] {
+  padding: 1rem 1rem;
+  padding-left: 20px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  margin: 1rem 40px 2rem 40px;
+  display: block;
+  font-size: 15px;
+}
+
+#personagens {
+  padding: 2rem;
+}
+  
+  /* ===== Cards de Personagens ===== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+}
+  
+.card {
+    background-color: #fff8dc;
+    border: 2px solid #fdd835;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+  
+.card:hover {
+    transform: scale(1.05);
+}
+  
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+  
+.card h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+  
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.heart {
+    font-size: 2rem;
+    color: #888;
+    cursor: pointer;
+    float: right;
+    margin-top: -60px;
+}
+  
+.favorited {
+    color: red;
+}
+  
+  /* ===== Favoritos (mesma base dos cards) ===== */
+#favorites-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.favoritos {
+  padding: 2rem;
+}
+
+/* ===== Carrossel de Curiosidades ===== */
+.curiosidades {
+  padding: 2rem;
+  background-color: #ffffff; 
+  margin-top: 1rem;
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.curiosidade-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  background-color: #fff8dc;
+  border: 2px solid #fdd835;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  min-width: 300px;
+  max-width: 350px;
+  font-size: 1.3rem;
+  color: #333;
+  transition: transform 0.3s;
+}
+
+.curiosidade-card:hover {
+  transform: scale(1.08);
+}
+  
+/* ===== Rodapé ===== */
+footer {
+    background-color: #fdd835;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p{
+  margin: 0;
+  display: inline-block;
+}
+  
+  /* ===== Responsividade Extra ===== */
+@media (max-width: 768px) {
+    #caixa_menu {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .item_menu {
+      margin: 0.5rem 0;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .curiosidade-card {
+      min-width: 220px;
+      font-size: 0.95rem;
+    }
+}
+  
