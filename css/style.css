@@ -266,26 +266,3 @@ footer p{
   display: inline-block;
 }
   
-  /* ===== Responsividade Extra ===== */
-@media (max-width: 768px) {
-    #caixa_menu {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-  
-    .item_menu {
-      margin: 0.5rem 0;
-    }
-  
-    input[type="text"] {
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .curiosidade-card {
-      min-width: 220px;
-      font-size: 0.95rem;
-    }
-}
-  
